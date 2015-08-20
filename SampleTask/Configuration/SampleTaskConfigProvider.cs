@@ -1,4 +1,5 @@
 ﻿using Autofac.Extras.NLog;
+using Panteon.Sdk.Configuration;
 
 namespace Panteon.SampleTask.Configuration
 {

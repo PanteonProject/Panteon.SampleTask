@@ -1,5 +1,6 @@
 using System.ComponentModel.Composition;
 using Autofac;
+using Panteon.Sdk;
 
 namespace Panteon.SampleTask
 {

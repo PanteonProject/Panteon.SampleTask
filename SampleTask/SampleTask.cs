@@ -1,6 +1,7 @@
 ﻿using System;
 using Autofac.Extras.NLog;
 using Panteon.SampleTask.Configuration;
+using Panteon.Sdk;
 
 namespace Panteon.SampleTask
 {
