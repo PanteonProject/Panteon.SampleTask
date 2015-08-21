@@ -103,7 +103,6 @@
     <Compile Include="Configuration\SampleTaskSettings.cs" />
     <Compile Include="SampleTask.cs" />
     <Compile Include="Exports.cs" />
-    <Compile Include="TaskModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
