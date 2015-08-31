@@ -12,7 +12,7 @@ namespace Panteon.SampleTask
         }
         public override string Name => "My-Dummy-Task";
 
-        public override bool Bootstrap(bool autoRun)
+        public override bool Init(bool autoRun)
         {
             return Run((task, offset) => Console.WriteLine($"Dummy Hello {DateTime.Now}"));
         }
