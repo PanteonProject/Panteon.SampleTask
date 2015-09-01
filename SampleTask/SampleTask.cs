@@ -5,7 +5,7 @@ using Panteon.Sdk;
 
 namespace Panteon.SampleTask
 {
-    public class SampleTask : PanteonTask, IDisposable
+    public class SampleTask : PanteonWorker, IDisposable
     {
         public SampleTask(ILogger logger, ISampleTaskSettings taskSettings) : base(logger, taskSettings)
         {

@@ -2,7 +2,7 @@
 
 namespace Panteon.SampleTask.Configuration
 {
-    public interface ISampleTaskSettings : ITaskSettings
+    public interface ISampleTaskSettings : IWorkerSettings
     {
     }
 }
