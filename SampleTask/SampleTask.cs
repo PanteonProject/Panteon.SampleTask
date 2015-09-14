@@ -10,11 +10,14 @@ namespace Panteon.SampleTask
         public SampleTask(ILogger logger, ISampleTaskSettings taskSettings) : base(logger, taskSettings)
         {
         }
-        public override string Name => "My-Dummy-Task";
+        public override string Name
+        {
+            get { return "My-Dummy-Task"; }
+        }
 
         public override bool Init(bool autoRun)
         {
-            return Run((task, offset) => Console.WriteLine($"Dummy Hello {DateTime.Now}"));
+            return Run((task, offset) => Console.WriteLine("Dummy Hello {0}", DateTime.Now));
         }
     }
 }
