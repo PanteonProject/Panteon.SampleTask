@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity.SqlServer;
 using Autofac.Extras.NLog;
 using Panteon.SampleTask.Configuration;
 using Panteon.Sdk;
@@ -14,6 +15,7 @@ namespace Panteon.SampleTask
 
         public override bool Init(bool autoRun)
         {
+            SqlProviderServices providerServices;
             return Run((task, offset) => Console.WriteLine($"Dummy Hello {DateTime.Now}"));
         }
     }
