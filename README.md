@@ -18,7 +18,7 @@ Sample Task
     }
 ```
 
-**Exports*
+**Exports**
 
 ```cs
 [Export(typeof(ITaskExports))]
