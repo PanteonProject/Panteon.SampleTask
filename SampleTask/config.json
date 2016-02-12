@@ -1,9 +1,10 @@
 ﻿{
-    "Name": "Sample Worker",
-    "Enabled": true,
-    "TestMode": false,
-    "PollIntervalSeconds": 10,
-    "RedisConnectionString": "localhost:6379",
-    "SchedulePattern": "min(*)",
-    "DbNo": -1
+  "Name": "Sample Worker",
+  "Enabled": true,
+  "TestMode": false,
+  "PollIntervalSeconds": 10,
+  "RedisConnectionString": "localhost:6379",
+  "SchedulePattern": "min(*)",
+  "DbNo": -1,
+  "ConnectionString": "Data Source=.\\;Initial Catalog=Panth;Integrated Security=True"
 }

@@ -4,8 +4,10 @@ using System.Reflection;
 using Autofac;
 using Autofac.Extras.NLog;
 using NLog;
+using Panteon.HistoryStorage.SqlServer;
 using Panteon.SampleTask.Configuration;
 using Panteon.Sdk;
+using Panteon.Sdk.History;
 using Panteon.Sdk.IO;
 using Panteon.Sdk.Utils;
 using ILogger = Autofac.Extras.NLog.ILogger;
@@ -29,6 +31,7 @@ namespace Panteon.SampleTask
 
                 builder.RegisterType<FileSystem>().As<IFileSystem>().SingleInstance();
                 builder.RegisterType<FileReader>().As<IFileReader>().SingleInstance();
+                builder.RegisterType<SqlServerHistoryStorage>().As<IHistoryStorage>().SingleInstance();
 
                 builder.Register(
                     context =>
